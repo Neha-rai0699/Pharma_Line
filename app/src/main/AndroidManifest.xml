@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.medical.Pharma_Line">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="true" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <application
+        android:name="com.medical.Pharma_Line.AppController"
+        android:allowBackup="true"
+        android:icon="@mipmap/launcher"
+        android:label="Pharma_Line"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+
+        <activity
+            android:name="com.medical.Pharma_Line.ui.splash.SplashActivity"
+            android:theme="@style/MyTheme"
+            android:screenOrientation="portrait">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+        </activity>
+        <activity
+            android:name="com.medical.Pharma_Line.ui.register.RegisterActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name="com.medical.Pharma_Line.ui.profile.ProfileActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.medical.Pharma_Line.ui.user_address.AddressDetailsActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize"/>
+        <activity
+            android:name="com.medical.Pharma_Line.ui.about_us.AboutusActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.medical.Pharma_Line.ui.login.LoginActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name="com.medical.Pharma_Line.ui.activate_account.ActivateAccountActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.medical.Pharma_Line.ui.home.HomeActivity"
+            android:icon="@mipmap/launcher"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize"/>
+        <activity
+            android:name="com.medical.Pharma_Line.ui.my_prescription.MyPrescriptionActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.medical.Pharma_Line.ui.my_orders.MyOrdersActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.medical.Pharma_Line.ui.my_cart.MyCartActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.medical.Pharma_Line.ui.medicine_details.MedicineInformationActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.medical.Pharma_Line.ui.fogot_passwod.ForgotActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.medical.Pharma_Line.ui.reset_password.ResetPasswordActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.medical.Pharma_Line.TakePhotoActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.medical.Pharma_Line.ui.upload_photo.UploadActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name="com.medical.Pharma_Line.ui.upload_photo.CameraActivity" />
+        <activity
+            android:name="com.medical.Pharma_Line.AlternativesActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.medical.Pharma_Line.ui.home.MainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.medical.Pharma_Line.SecondActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.medical.Pharma_Line.ui.prescription_details.PrescriptionDetailsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.medical.Pharma_Line.ui.payment.WebViewPaymentActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.medical.Pharma_Line.ui.my_order_details.OrderDetailsActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.medical.Pharma_Line.ui.payment_response.PaymentResponseActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name="com.medical.Pharma_Line.NewBaseActivity"
+            android:screenOrientation="portrait"/>
+    </application>
+
+</manifest>

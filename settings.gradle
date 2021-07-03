@@ -1,0 +1,2 @@
+rootProject.name='Pharma_Line'
+include ':app'
